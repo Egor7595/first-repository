@@ -1,0 +1,45 @@
+Settings
+git config --global user.name "Egor"
+git config --global user.email egor.zevakin.94@gmail.com 
+
+Create a new repository in folder of project
+git init
+
+Condition
+git status
+
+preporation for commit
+git add "nameFile"
+git add --all 
+
+Commit
+git commit -m "Description" 
+
+Remote repository 
+git remote add origin https://github.com/Egor7596/first-repository.git
+
+Send changes to server
+git push origin master  - "origin" name of repository
+
+Clone repository
+git clone https://github.com/Egor7595/first-repository.git
+
+Request changes from server
+git pull origin master
+
+Create new branch 
+git branch amazing_new_feature - as default copy main branch
+
+Condition of branches
+git branch
+
+Switch branch
+git checkout amazing_new_feature
+
+Merging branches
+git add feature.py
+git commit -m "New feature complete" - add changes
+
+git checkout master 
+
+

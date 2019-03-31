@@ -1,0 +1,22 @@
+1#
+ error: unknow display, low resolution 
+	  sudo ubuntu-drivers devices
+	  sudo ubuntu-drivers autoinstall 
+	  reboot
+
+2#
+ уход в ждущий режим при включении ноутбука (второй монитор включается после открытия крышки ноутбука)
+ sudo vim /etc/systemd/logind.conf
+
+ HangleLidSwitch=ignore и раскомментировать строк
+ sudo reboot
+3#
+ 1)установка переключения языка на ctrl+shift 
+   gsettings set org.gnome.desktop.input-sources xkb-options "['grp:ctrl_shift_toggle']"
+ 
+   gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggle']"
+ 
+ 2)установка tweaks 
+   sudo apt install gnome-tweaks
+
+ 
